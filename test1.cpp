@@ -47,8 +47,8 @@ int main (int argc, char** argv) {
 			auto end2 = high_resolution_clock::now();
 			printf("time: %f ms\n", duration<double, std::milli>(end2 - begin2).count());
 
-			delete[] src;
-			delete[] dst;
+			//delete[] src;
+			//delete[] dst;
 		}
 		else if(mode == 2) {
 			
