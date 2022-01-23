@@ -65,4 +65,6 @@ int main () {
 	//delete[] src;
 	//delete[] dst;
 
+	//:D
+	return 0;
 }
