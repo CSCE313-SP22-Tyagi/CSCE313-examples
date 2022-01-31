@@ -1,3 +1,5 @@
+//This program demonstrates the way that file descriptors are inherited by child processes using fork()
+
 #include <cstdio>
 #include <cstring>
 
@@ -35,4 +37,8 @@ int main () {
 		}
 		printf("FILE CONTENTS (child): \"%s\"\n", buf);
 	}
+	//of the parent and child, whichever goes first will print the content of the file
+	//the second will see that its own file pointer has moved to the EOF, and will not receive any data
+	//this is because their file descriptors point to the same entry in the OS open file table,
+	//so the file pointer is the same for both processes
 }

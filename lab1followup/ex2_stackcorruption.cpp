@@ -1,3 +1,5 @@
+//This program demonstrates the importance of presetting buffers (e.g. memset 0) and not sending more data than necessary
+
 #include <cstdio>
 #include <cstring>
 

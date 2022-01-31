@@ -1,3 +1,5 @@
+//This program demonstrates a bit of pointer logic and stack manipulation
+
 #include <cstring>
 #include <cstdio>
 #include <cstdlib>
