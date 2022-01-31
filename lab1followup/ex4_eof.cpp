@@ -1,4 +1,4 @@
-//This program demonstrates the way that file descriptors are inherited by child processes using fork()
+//This program examines what could happen if you request too much data from a server (e.g., data past the end of a file that it is serving to you)
 
 #include <cstdio>
 #include <cstring>
@@ -35,6 +35,8 @@ void parent(int srfd, int swfd) {
 		//
 		printf("parent serving %d,%d\n", m.off, m.len);
 		//if you uncomment this, it'll behave like the PA1 server, and it will crash :)
+		//without it, the server will send you a bunch of garbage info
+		//which is a security vulnerability, and would also make your client behavior incorrect (since it'll use the garbage data as if it's correct)
 		//assert(m.off + m.len <= SZ);
 		write(swfd, data + m.off, m.len);
 	}
