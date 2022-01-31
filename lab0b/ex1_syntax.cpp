@@ -91,6 +91,7 @@ test_class* create_test_class() {
 typedef unsigned long long Jimmy;
 
 int main (int argc, char** argv) {
+
 	printf("test run with %d cmdline arguments\n", argc);
 
 	//thanks to the above typedef, these mean the same thing

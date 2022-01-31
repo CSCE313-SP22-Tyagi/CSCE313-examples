@@ -1,0 +1,11 @@
+dog
+cat
+dog cat
+cat dog
+dogs
+cats
+bird
+birds
+duck
+ducks are birds
+this file is 100 bytes!!
