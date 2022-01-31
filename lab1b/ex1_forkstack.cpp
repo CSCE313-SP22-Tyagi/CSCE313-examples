@@ -1,8 +1,6 @@
 #include <cstdio>
-#include <cstdlib>
 #include <cstring>
 
-#include <sys/types.h>
 #include <unistd.h>
 
 #include <string>

@@ -1,14 +1,8 @@
 #include <cstdio>
-#include <cstdlib>
 #include <cstring>
 
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-
-#include <string>
-using std::string;
 
 int main () {
 	const char* file = "test10.txt"; //file path

@@ -1,14 +1,5 @@
 #include <cstdio>
-#include <cstdlib>
 #include <cstring>
-
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-
-#include <string>
-using std::string;
 
 void f(const char* str) {
 	char buf[100];
