@@ -7,7 +7,7 @@
 using namespace std;
 
 int main () {
-    int pid = fork();
+    pid_t pid = fork();
     if (!pid) {
         execlp("./prog2", "./prog2", NULL);
         perror("failed exec");

@@ -12,7 +12,7 @@ int main () {
     int a = 50;
     int b = 30;
 
-    if (fork()) {
+    if (!fork()) {
         int c1 = a + b;
 
         cout << "\nchild" << endl;
