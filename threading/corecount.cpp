@@ -128,4 +128,8 @@ int main(int argc, char** argv) {
         double time = a.run(threads);
         printf("%d, %.2f, %.2fx\n", threads, time, timeSingle / time);
     }
+    //when you run this program, you should notice a speedup that goes up to something close to the core count on your computer --
+    //e.g., on my 8-core desktop, the max speedup is about 6.8x (gonna have to talk to AMD about this...)
+    //when you run too many (i.e., several thousand) threads, the performance should go down again, since the CPU gets bogged down with all the scheduling overhead.
+    //also note: all debugging flags (asan, -g) are disabled in the makefile. if you reenable them, you will likely get *worse* performance with more threads.
 }
